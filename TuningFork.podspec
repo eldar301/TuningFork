@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.module_name   = "TuningFork"
   s.requires_arc  = true
   s.dependency 'AudioKit', '~> 4.0'
-  s.dependency 'Chronos-Swift', podspec: 'https://raw.githubusercontent.com/artsy/emission/v1.5.2/externals/yoga/yoga.podspec.json'
+  s.dependency 'Chronos-Swift', git: 'https://github.com/RamyRizkalla/Chronos-Swift.git'
 end
