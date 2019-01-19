@@ -15,6 +15,4 @@ Pod::Spec.new do |s|
   s.source_files  = "TuningFork/*.{h,swift}", "TuningFork/**/*.{h,swift}"
   s.module_name   = "TuningFork"
   s.requires_arc  = true
-  s.dependency 'AudioKit', '~> 4.0'
-  s.dependency 'Chronos-Swift', :git => 'https://github.com/RamyRizkalla/Chronos-Swift.git'
 end
