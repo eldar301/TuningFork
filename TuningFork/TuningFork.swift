@@ -27,7 +27,6 @@
 // MARK:- Imports
 
 import AudioKit
-import Chronos
 
 
 // MARK:- Constants

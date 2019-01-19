@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D1CA9D221F3B35100FB72AD /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1CA9CD21F3B35100FB72AD /* RepeatingTimer.swift */; };
+		2D1CA9D321F3B35100FB72AD /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1CA9CE21F3B35100FB72AD /* Timer.swift */; };
+		2D1CA9D421F3B35100FB72AD /* TimerInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1CA9CF21F3B35100FB72AD /* TimerInternal.swift */; };
+		2D1CA9D521F3B35100FB72AD /* DispatchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1CA9D021F3B35100FB72AD /* DispatchTimer.swift */; };
+		2D1CA9D621F3B35100FB72AD /* VariableTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1CA9D121F3B35100FB72AD /* VariableTimer.swift */; };
 		DD28EB0D1BD21EC000DA041C /* TuningFork.h in Headers */ = {isa = PBXBuildFile; fileRef = DD28EB0C1BD21EC000DA041C /* TuningFork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD28EB261BD21F5300DA041C /* TuningFork.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD28EB251BD21F5300DA041C /* TuningFork.swift */; };
 		F54FD7F5BC18FC4872F35062 /* Pods_TuningFork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A575D5B9EA45AA9B83AD76F /* Pods_TuningFork.framework */; };
@@ -15,6 +20,11 @@
 /* Begin PBXFileReference section */
 		0316438EA257A08F1C063AE6 /* Pods-TuningFork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuningFork.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuningFork/Pods-TuningFork.release.xcconfig"; sourceTree = "<group>"; };
 		25FCA1FDB4215CFA47CBB23A /* Pods-TuningForkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuningForkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuningForkTests/Pods-TuningForkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D1CA9CD21F3B35100FB72AD /* RepeatingTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
+		2D1CA9CE21F3B35100FB72AD /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		2D1CA9CF21F3B35100FB72AD /* TimerInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerInternal.swift; sourceTree = "<group>"; };
+		2D1CA9D021F3B35100FB72AD /* DispatchTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchTimer.swift; sourceTree = "<group>"; };
+		2D1CA9D121F3B35100FB72AD /* VariableTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariableTimer.swift; sourceTree = "<group>"; };
 		4A575D5B9EA45AA9B83AD76F /* Pods_TuningFork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuningFork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB97078C013DBFD2620D49D /* Pods-TuningFork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuningFork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuningFork/Pods-TuningFork.debug.xcconfig"; sourceTree = "<group>"; };
 		A586B873231449AB115D30A6 /* Pods_TuningForkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuningForkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +49,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D1CA9D921F3B38D00FB72AD /* Chronos */ = {
+			isa = PBXGroup;
+			children = (
+				2D1CA9CF21F3B35100FB72AD /* TimerInternal.swift */,
+				2D1CA9CE21F3B35100FB72AD /* Timer.swift */,
+				2D1CA9D021F3B35100FB72AD /* DispatchTimer.swift */,
+				2D1CA9CD21F3B35100FB72AD /* RepeatingTimer.swift */,
+				2D1CA9D121F3B35100FB72AD /* VariableTimer.swift */,
+			);
+			name = Chronos;
+			sourceTree = "<group>";
+		};
 		38151BE6E2DED5711A97B822 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				DD28EB0B1BD21EC000DA041C /* TuningFork */,
+				2D1CA9D921F3B38D00FB72AD /* Chronos */,
 				DD28EB0A1BD21EC000DA041C /* Products */,
 				EED98AFDF2B81B71965D05F4 /* Frameworks */,
 				38151BE6E2DED5711A97B822 /* Pods */,
@@ -199,7 +222,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D1CA9D521F3B35100FB72AD /* DispatchTimer.swift in Sources */,
+				2D1CA9D621F3B35100FB72AD /* VariableTimer.swift in Sources */,
+				2D1CA9D421F3B35100FB72AD /* TimerInternal.swift in Sources */,
+				2D1CA9D321F3B35100FB72AD /* Timer.swift in Sources */,
 				DD28EB261BD21F5300DA041C /* TuningFork.swift in Sources */,
+				2D1CA9D221F3B35100FB72AD /* RepeatingTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -306,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
