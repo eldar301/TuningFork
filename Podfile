@@ -6,11 +6,7 @@ use_frameworks!
 
 target 'TuningFork' do
   pod 'AudioKit', '~> 4.0'
-  pod 'Chronos-Swift', '~> 0.3.0'
-end
-
-target 'TuningForkTests' do
-  pod 'AudioKit', '~> 4.0'
-  pod 'Chronos-Swift', '~> 0.3.0'
+  pod 'Chronos-Swift', :git => 'https://github.com/RamyRizkalla/Chronos-Swift.git'
+  
 end
 
