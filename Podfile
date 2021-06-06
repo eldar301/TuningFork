@@ -5,7 +5,7 @@ inhibit_all_warnings!
 use_frameworks!
 
 target 'TuningFork' do
-  pod 'AudioKit', '4.2'
+  pod 'AudioKit', '4.5'
   
 end
 
